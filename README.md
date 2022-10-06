@@ -17,7 +17,7 @@ This branch is for the development of the Floor Scene (the floor with many books
 Created spawning scripts to layout the high amount of bookshelves in the scene
 Created two scenes. The first scene (FloorBookshelfScene) was an early version of the vision we had, but the second scene (FloorScenev2) is the scene that will be worked on going forward. It contains 2001 bookshelfs, 4 walls, 9 planes, and 12 pillars.
 
-lute/development
+lute/development:
 This branch is the work of the OverWorld Scene (the initial scene where the player will be spawned)
 It currently contains a block or parcel of 69 buildings where there is 3 different types of buildings to account for a feeling of variety and massiveness.
 It will be iterated to include 69 of this parcels or blocks that will correspond with the 69 rows by 69 columns of buildings.
