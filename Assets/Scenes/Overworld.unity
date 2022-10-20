@@ -538,6 +538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorToLobby
       objectReference: {fileID: 0}
+    - target: {fileID: 4820851769216444526, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
+      propertyPath: m_TagString
+      value: OverworldDoor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
 --- !u!1 &14788233 stripped
@@ -545,18 +549,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4820851769216444526, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
   m_PrefabInstance: {fileID: 14788232}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &14788234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14788233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e091e1332bdf460c8d473f0836fbce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &14788235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4908,6 +4900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorToLobby
       objectReference: {fileID: 0}
+    - target: {fileID: 4820851769216444526, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
+      propertyPath: m_TagString
+      value: OverworldDoor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
 --- !u!1 &393166967 stripped
@@ -4915,18 +4911,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4820851769216444526, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
   m_PrefabInstance: {fileID: 393166966}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &393166968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393166967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e091e1332bdf460c8d473f0836fbce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &393166969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5786,6 +5770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorToLobby
       objectReference: {fileID: 0}
+    - target: {fileID: 4820851769216444526, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
+      propertyPath: m_TagString
+      value: OverworldDoor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
 --- !u!1 &451675573 stripped
@@ -5793,18 +5781,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4820851769216444526, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
   m_PrefabInstance: {fileID: 451675572}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &451675574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451675573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e091e1332bdf460c8d473f0836fbce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &451675575
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12074,6 +12050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorToLobby
       objectReference: {fileID: 0}
+    - target: {fileID: 4820851769216444526, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
+      propertyPath: m_TagString
+      value: OverworldDoor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
 --- !u!1 &985886351 stripped
@@ -12081,18 +12061,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4820851769216444526, guid: 89dd74c61103b7644ab2dd9d26606ea0, type: 3}
   m_PrefabInstance: {fileID: 985886350}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &985886352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985886351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e091e1332bdf460c8d473f0836fbce8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &985886353
 BoxCollider:
   m_ObjectHideFlags: 0
