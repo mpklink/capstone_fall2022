@@ -5,80 +5,51 @@ using UnityEngine;
 /* This script does the selection of a book. */
 public class BookSelect : MonoBehaviour
 {
-    private int[] winning = {50, 50, 50, 50, 50, 10};
-    private int[] current = {50, 50, 50, 50, 50, -1};
     
-    public GameObject win;
-    public GameObject lose;
-
-    private GameObject[] books;
-    private GameObject selectedBook;
-    private bool endGame = false;
+    public int bookNumber;              // The numerical order that the book is in.
+    public int lotteryNumber;           // The winning numerical value for the lottery.
+    public Material glowMaterial;       // The material that the book uses when the mouse is over it.
+    private Material defaultMaterial;   // The default material of the book.
+    private Behaviour halo;             // The halo component of the book. It is turned OFF by default.
 
     private void Start()
-    {   
-        books = GameObject.FindGameObjectsWithTag("Book");
-        for(int i = 0; i < books.Length; i++)
-        {
-            books[i].GetComponent<BookData>().bookNumber = i;
-        }
+    {
+        defaultMaterial = GetComponent<MeshRenderer>().material; 
+        halo = (Behaviour)GetComponent("Halo");
     }
 
     private void Update()
     {
-        if(!endGame)
+        if(Input.GetMouseButtonUp(0))
         {
-            for(int i = 0; i < books.Length; i++)
-            {
-                if (books[i].GetComponent<BookData>().endFound)
-                {
-                    endGame = true;
-                    current[current.Length - 1] = books[i].GetComponent<BookData>().bookNumber;
+            halo.enabled = false;
+        }
+    }
 
-                    break;
-                }
-            }
-            if(endGame)
+    private void OnMouseOver(){
+        GetComponent<MeshRenderer>().material = glowMaterial;
+        
+        // Check for left mouse click.
+        if(Input.GetMouseButtonDown(0)){
+            halo.enabled = true;
+            if(CheckLottery())
             {
-                if(CheckLotteryWin())
-                {
-                    YouWin();
-                }
-                else
-                {
-                    YouLose();
-                }
-                for(int i = 0; i < books.Length; i++)
-                {
-                    books[i].GetComponent<BookData>().endFound = true;
-                }
+                Debug.Log("Book " + bookNumber + " is the winner!");
+            }
+            else
+            {
+                Debug.Log("Book " + bookNumber + " is NOT the winner.");
             }
         }
     }
 
-    private bool CheckLotteryWin()
+    private void OnMouseExit()
     {
-        for(int i = 0; i < winning.Length; i++)
-        {
-            if(current[i] != winning[i])
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-    
-    private void YouWin()
-    {
-        int bookNumber = current[current.Length - 1];
-        Debug.Log("Book " + bookNumber + " is the winner!");
-        win.gameObject.SetActive(true);
-    }
-    private void YouLose()
-    {
-        int bookNumber = current[current.Length - 1];
-        Debug.Log("Book " + bookNumber + " is NOT the winner.");
-        lose.gameObject.SetActive(true);
+        GetComponent<MeshRenderer>().material = defaultMaterial;
     }
 
+    private bool CheckLottery()
+    {
+        return bookNumber == lotteryNumber;
+    }
 }

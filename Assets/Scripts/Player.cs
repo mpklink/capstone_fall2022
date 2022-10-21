@@ -56,5 +56,17 @@ public class Player : MonoBehaviour
        //     Global.current[1] = other.GetComponent<Building>().BuildingNum;
             SceneManager.LoadScene("Lobby");
         }
+        if (other.CompareTag("LobbyToLibrary"))
+        {
+            //     Global.current[0] = other.GetComponent<Building>().BlockNum;
+            //     Global.current[1] = other.GetComponent<Building>().BuildingNum;
+            SceneManager.LoadScene("LibraryFloor");
+        }
+        if (other.CompareTag("BookShelf1"))
+        {
+            //     Global.current[0] = other.GetComponent<Building>().BlockNum;
+            //     Global.current[1] = other.GetComponent<Building>().BuildingNum;
+            SceneManager.LoadScene("Bookshelf");
+        }
     }
 }
