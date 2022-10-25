@@ -13,13 +13,13 @@ public class Player : MonoBehaviour
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
 
-    private GlobalVariables Global;
+    //private GlobalVariables Global;
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        Global = FindObjectOfType<GlobalVariables>();
-        Console.WriteLine(Global.winning[0].ToString() + " " + Global.winning[1].ToString() + " " + Global.winning[2].ToString() + " " + Global.winning[3].ToString() + " " + Global.winning[4].ToString() + " " + Global.winning[5].ToString());
+        //Global = FindObjectOfType<GlobalVariables>();
+        //Console.WriteLine(Global.winning[0].ToString() + " " + Global.winning[1].ToString() + " " + Global.winning[2].ToString() + " " + Global.winning[3].ToString() + " " + Global.winning[4].ToString() + " " + Global.winning[5].ToString());
     }
 
     // Update is called once per frame
@@ -52,20 +52,21 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("OverworldDoor"))
         {
-       //     Global.current[0] = other.GetComponent<Building>().BlockNum;
-       //     Global.current[1] = other.GetComponent<Building>().BuildingNum;
+            //GlobalVariables.current[0] = other.GetComponent<Building>().BlockNum;
+            //GlobalVariables.current[1] = other.GetComponent<Building>().BuildingNum;
+            GlobalVariables.current[0] = 7; // This is temporary, delete when not needed for testing
             SceneManager.LoadScene("Lobby");
         }
         if (other.CompareTag("LobbyToLibrary"))
         {
-            //     Global.current[0] = other.GetComponent<Building>().BlockNum;
-            //     Global.current[1] = other.GetComponent<Building>().BuildingNum;
+            //GlobalVariables.current[0] = other.GetComponent<Building>().BlockNum;
+            //GlobalVariables.current[1] = other.GetComponent<Building>().BuildingNum;
             SceneManager.LoadScene("LibraryFloor");
         }
         if (other.CompareTag("BookShelf1"))
         {
-            //     Global.current[0] = other.GetComponent<Building>().BlockNum;
-            //     Global.current[1] = other.GetComponent<Building>().BuildingNum;
+            //GlobalVariables.current[0] = other.GetComponent<Building>().BlockNum;
+            //GlobalVariables.current[1] = other.GetComponent<Building>().BuildingNum;
             SceneManager.LoadScene("Bookshelf");
         }
     }
