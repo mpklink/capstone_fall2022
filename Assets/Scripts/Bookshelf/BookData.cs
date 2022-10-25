@@ -8,9 +8,9 @@ public class BookData : MonoBehaviour
     public Material glowMaterial;       // The material that the book uses when the mouse is over it.
     private Material defaultMaterial;   // The default material of the book.
     private Behaviour halo;             // The halo component of the book. It is turned OFF by default.
-    
+
     public bool endFound = false;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +30,7 @@ public class BookData : MonoBehaviour
         if(!endFound)
         {
             GetComponent<MeshRenderer>().material = glowMaterial;
-            
+
             // Check for left mouse click.
             if(Input.GetMouseButtonDown(0)){
                 halo.enabled = true;

@@ -404,7 +404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d889ea3e953a7468df9ef1438a998f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lotteryNumber: 7
   win: {fileID: 1133190780}
   lose: {fileID: 1813587335}
 --- !u!4 &361778459
