@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour
 {
-    public static int[] winning = new int[6];
-    public static int[] current = new int[6];
+    public int[] winning = new int[6];
+    public int[] current = new int[6];
 
     // Start is called before the first frame update
     void Start()

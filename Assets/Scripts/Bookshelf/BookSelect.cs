@@ -15,8 +15,12 @@ public class BookSelect : MonoBehaviour
     private GameObject selectedBook;
     private bool endGame = false;
 
+    private GlobalVariables Global;
+
     private void Start()
     {   
+        Global = FindObjectOfType<GlobalVariables>();
+
         books = GameObject.FindGameObjectsWithTag("Book");
         for(int i = 0; i < books.Length; i++)
         {
@@ -33,7 +37,8 @@ public class BookSelect : MonoBehaviour
                 if (books[i].GetComponent<BookData>().endFound)
                 {
                     endGame = true;
-                    GlobalVariables.current[GlobalVariables.current.Length - 1] = books[i].GetComponent<BookData>().bookNumber;
+                    Global.current[Global.current.Length - 1] = books[i].GetComponent<BookData>().bookNumber;
+                    Global.current[5] = Global.winning[5];
 
                     break;
                 }
@@ -61,14 +66,14 @@ public class BookSelect : MonoBehaviour
         bool winLottery = true;
         string winning = "winning: ";
         string current = "current: ";
-        for(int i = 0; i < GlobalVariables.winning.Length; i++)
+        for(int i = 0; i < Global.winning.Length; i++)
         {
-            if(GlobalVariables.current[i] != GlobalVariables.winning[i])
+            if(Global.current[i] != Global.winning[i])
             {
                 winLottery = false;
             }
-            winning = winning + GlobalVariables.winning[i] + "  ";
-            current = current + GlobalVariables.current[i] + "  ";
+            winning = winning + Global.winning[i] + "  ";
+            current = current + Global.current[i] + "  ";
         }
         Debug.Log(winning);
         Debug.Log(current);
@@ -77,13 +82,13 @@ public class BookSelect : MonoBehaviour
     
     private void YouWin()
     {
-        int bookNumber = GlobalVariables.current[GlobalVariables.current.Length - 1];
+        int bookNumber = Global.current[Global.current.Length - 1];
         Debug.Log("Book " + bookNumber + " is the winner!");
         win.gameObject.SetActive(true);
     }
     private void YouLose()
     {
-        int bookNumber = GlobalVariables.current[GlobalVariables.current.Length - 1];
+        int bookNumber = Global.current[Global.current.Length - 1];
         Debug.Log("Book " + bookNumber + " is NOT the winner.");
         lose.gameObject.SetActive(true);
     }
