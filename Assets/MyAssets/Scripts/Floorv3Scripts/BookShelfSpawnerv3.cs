@@ -77,7 +77,7 @@ public class BookShelfSpawnerv3 : MonoBehaviour
             SpawnBookShelf(pos);
 
             //Initial Condition
-            if (counter < 19)
+            if (counter < 33)
             {
                 xHelper += trueSpaceBetweenShleves;
                 counter++;
