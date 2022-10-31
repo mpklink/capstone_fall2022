@@ -7,14 +7,14 @@ public class HighlightWinningShelf : MonoBehaviour
     [SerializeField]
     GameObject winningKookShelfPrefab;
 
-    //public float[] callToGlobal;
+    private GlobalVariables Global;
 
     // Start is called before the first frame update
     void Start()
     {
-        //callToGlobal = GlobalVariables.winning;
+        Global = FindObjectOfType<GlobalVariables>();
         float[] winningBookshelf = new float[2];
-        winningBookshelf = CalculateCoordinates(69, 69);
+        winningBookshelf = CalculateCoordinates(Global.winning[3]);
         Debug.Log("xValue is: " + winningBookshelf[0]);
         Debug.Log("zValue is: " + winningBookshelf[1]);
 
@@ -27,7 +27,7 @@ public class HighlightWinningShelf : MonoBehaviour
     }
 
 
-    public static float[] CalculateCoordinates(int value1, int value2)
+    public static float[] CalculateCoordinates(int bookshelfNumber)
     {
         float[] winningBookshelf = new float[2];
 
@@ -47,11 +47,11 @@ public class HighlightWinningShelf : MonoBehaviour
         float xValue = 0f;
         float zValue = 0f;
 
-        // Value 4761 is reserved for the bookshelf at (0,0)  
-        if (value1 * value2 != 4761)
+        // Value 4761 is reserved for the bookshelf at (0,0) this one is #4761  
+        if (bookshelfNumber != 4761)
         {
             // Find x value first
-            int helper = (value1 * value2) % bookShelvesInRow;
+            int helper = bookshelfNumber % bookShelvesInRow;
             if (helper == 0)
             {
                 xValue = initialXValue + (bookShelvesInRow * spaceBetweenBookShelves) + deadSpaceX;
@@ -66,7 +66,7 @@ public class HighlightWinningShelf : MonoBehaviour
             }
 
             // Find z value
-            int helper2 = (value1 * value2) / bookShelvesInRow;
+            int helper2 = bookshelfNumber / bookShelvesInRow;
             //int helper2 = (value1 * value2) % bookShelvesinColumn;
             if (helper2 == 0)
             {
