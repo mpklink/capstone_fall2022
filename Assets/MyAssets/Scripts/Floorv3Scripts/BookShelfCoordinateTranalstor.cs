@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BookShelfCoordinateTranalstor : MonoBehaviour
 {
-    // Takes in the two values between 1 - 69 and calculates which bookshelf it goes to
-    public static float[] CalculateCoordinates(int value1, int value2)
+    // This method converts the bookshelf number into coordinates in the scene
+    public static float[] CalculateCoordinates(int bookshelfNumber)
     {
         float[] winningBookshelf = new float[2];
-        
+
         // xValue stuff
         int bookShelvesInRow = 68;
         float initialXValue = -183.5f;
@@ -17,7 +17,7 @@ public class BookShelfCoordinateTranalstor : MonoBehaviour
 
         // zValue stuff
         int bookShelvesinColumn = 70;
-        float initialZValue = 189.5f;
+        float initialZValue = 184.5f;
         float spaceBetweenRows = 5f;
         float deadSpaceZ = 24f;
 
@@ -25,11 +25,11 @@ public class BookShelfCoordinateTranalstor : MonoBehaviour
         float xValue = 0f;
         float zValue = 0f;
 
-        // Value 4761 is reserved for the bookshelf at (0,0)  
-        if (value1 * value2 != 4761)
+        // Value 4761 is reserved for the bookshelf at (0,0) this one is #4761  
+        if (bookshelfNumber != 4761)
         {
             // Find x value first
-            int helper = (value1 * value2) % bookShelvesInRow;
+            int helper = bookshelfNumber % bookShelvesInRow;
             if (helper == 0)
             {
                 xValue = initialXValue + (bookShelvesInRow * spaceBetweenBookShelves) + deadSpaceX;
@@ -44,12 +44,13 @@ public class BookShelfCoordinateTranalstor : MonoBehaviour
             }
 
             // Find z value
-            int helper2 = (value1 * value2) % bookShelvesinColumn;
+            int helper2 = bookshelfNumber / bookShelvesInRow;
+            //int helper2 = (value1 * value2) % bookShelvesinColumn;
             if (helper2 == 0)
             {
-                zValue = initialZValue - (bookShelvesinColumn * spaceBetweenRows) - deadSpaceZ;
+                zValue = initialZValue;
             }
-            else if (helper <= (bookShelvesinColumn / 2))
+            else if (helper2 < (bookShelvesinColumn / 2))
             {
                 zValue = initialZValue - (helper2 * spaceBetweenRows);
             }
@@ -62,5 +63,44 @@ public class BookShelfCoordinateTranalstor : MonoBehaviour
         winningBookshelf[0] = xValue;
         winningBookshelf[1] = zValue;
         return winningBookshelf;
+    }
+    // This method converts coordinates into a bookshelf number
+    public static int CalculateBookShelfNumber(float xValue, float zValue)
+    {
+        int totalColumns = 68;
+        // (0,0) means we are in the middle so that is our middle of floor position
+        // We ignore translation if we find that we are in this position and shoot out 4761
+        int bookshelfNumber = 4761;
+        if (zValue != 0f && xValue != 0f)
+        {
+            bookshelfNumber = 1;
+            int rowNum = 0;
+            int columnNum = 0;
+
+            // Find the row number using our zValue
+            if (zValue > 0)
+            {
+                rowNum = (int)(((184.5f - zValue) / 5f) + 1f);
+            }
+            else if (zValue < 0)
+            {
+                rowNum = (int)(((184.5f - zValue + 1f) / 5f) - 4f);
+            }
+
+            // Find the column number using our xValue
+            if (xValue < 0)
+            {
+                columnNum = (int)(((-178.5f - xValue) / -5f) + 1f);
+            }
+            else if (xValue > 0)
+            {
+                columnNum = (int)(((-178.5f - xValue + 2f) / -5f) - 3f);
+            }
+
+            // Use found column and row to give the book shelf number
+            bookshelfNumber = (rowNum * columnNum) - (totalColumns - columnNum);
+
+        }
+        return bookshelfNumber;
     }
 }
