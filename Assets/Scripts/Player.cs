@@ -6,46 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    private CharacterController controller;
-    private Vector3 playerVelocity;
-    private bool groundedPlayer;
-    private float playerSpeed = 2.0f;
-    private float jumpHeight = 1.0f;
-    private float gravityValue = -9.81f;
+    public float movementSpeed = 10;
+    public float turningSpeed = 60;
 
     private GlobalVariables Global;
     // Start is called before the first frame update
     void Start()
     {
-        controller = GetComponent<CharacterController>();
         Global = FindObjectOfType<GlobalVariables>();
-        Console.WriteLine(Global.winning[0].ToString() + " " + Global.winning[1].ToString() + " " + Global.winning[2].ToString() + " " + Global.winning[3].ToString() + " " + Global.winning[4].ToString() + " " + Global.winning[5].ToString());
+        Debug.Log(Global.winning[0].ToString() + " " + Global.winning[1].ToString() + " " + Global.winning[2].ToString() + " " + Global.winning[3].ToString() + " " + Global.winning[4].ToString() + " " + Global.winning[5].ToString());
     }
 
     // Update is called once per frame
     void Update()
     {
-        groundedPlayer = controller.isGrounded;
-        if (groundedPlayer && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0f;
-        }
+        float horizontal = Input.GetAxis("Horizontal") * turningSpeed * Time.deltaTime;
+        transform.Rotate(0, horizontal, 0);
 
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        controller.Move(move * Time.deltaTime * playerSpeed);
-
-        if (move != Vector3.zero)
-        {
-            gameObject.transform.forward = move;
-        }
-
-        if (Input.GetButtonDown("Jump") && groundedPlayer)
-        {
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        }
-
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+        float vertical = Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime;
+        transform.Translate(0, 0, vertical);
     }
 
     private void OnTriggerEnter(Collider other)
