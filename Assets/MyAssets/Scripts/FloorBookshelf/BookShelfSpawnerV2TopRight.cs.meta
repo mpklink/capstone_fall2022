@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c35ce33be6b94894bb60efffd083bde6
+=======
+<<<<<<< HEAD:Assets/Editor/StarterAssetsDeployMenu.cs.meta
+guid: e75357183ea302c4d998136de2cc9669
+=======
+guid: c35ce33be6b94894bb60efffd083bde6
+>>>>>>> e83c598efde7b339a7df345f151a7b76c9b19b4d:Assets/MyAssets/Scripts/FloorBookshelf/BookShelfSpawnerV2TopRight.cs.meta
+>>>>>>> e83c598efde7b339a7df345f151a7b76c9b19b4d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

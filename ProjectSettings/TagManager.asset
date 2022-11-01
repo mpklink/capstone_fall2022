@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - OverworldDoor
-<<<<<<< HEAD
-=======
-  - Book
-  - LobbyToLibrary
->>>>>>> 2055530ae4a7b1a57241f387d0bbb31ee249d15d
+  tags: []
   layers:
   - Default
   - TransparentFX

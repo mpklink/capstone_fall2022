@@ -2,12 +2,18 @@ Lotto visualization simulation game.  This is a webgl game built in unity that w
 
 Release Notes:
 <<<<<<< HEAD
+<<<<<<< HEAD
 Currently the game is split across multiple code branches while some of the scenes and prefabs are being constructed individually. 
 =======
 Currently the game is split across multiple code branches while some of the scenes and prefabs are being constructed individually.
 
 10/20/22: Merged all active scenes into the development branch after everyone added trags and box colliders. Added global variables that will persist across scene changes and added the player code to change scenes.
 >>>>>>> 2055530ae4a7b1a57241f387d0bbb31ee249d15d
+=======
+Currently the game is split across multiple code branches while some of the scenes and prefabs are being constructed individually.
+
+10/20/22: Merged all active scenes into the development branch after everyone added trags and box colliders. Added global variables that will persist across scene changes and added the player code to change scenes.
+>>>>>>> e83c598efde7b339a7df345f151a7b76c9b19b4d
 
 PlayerPrefab branch: 
 This branch is where the player prefab that will be shared across all scenes is being constructed.  The player will be a blocky charcter similar to what you see in games like minecraft.  Currently just the basic outlines and camera movements are implemented. 

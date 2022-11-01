@@ -1573,6 +1573,10 @@ GameObject:
   - component: {fileID: 1136870940}
   - component: {fileID: 1136870939}
   - component: {fileID: 1136870938}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 1136870941}
+>>>>>>> e83c598efde7b339a7df345f151a7b76c9b19b4d
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1639,13 +1643,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136870937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -46.3, y: 3.4, z: -17.1}
+=======
+  m_LocalPosition: {x: -46.15, y: 2.94, z: -10.78}
+>>>>>>> e83c598efde7b339a7df345f151a7b76c9b19b4d
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+--- !u!114 &1136870941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136870937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b9cd07f49a9a945b6605588afa6fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1599025068}
+  damping: 20
+  withDamping: 0
+>>>>>>> e83c598efde7b339a7df345f151a7b76c9b19b4d
 --- !u!1 &1201341682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2028,6 +2054,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96424a0461ccd8641b934b82da5c0aaa, type: 3}
+<<<<<<< HEAD
+=======
+--- !u!1 &1599025068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3088028984722568280, guid: 96424a0461ccd8641b934b82da5c0aaa, type: 3}
+  m_PrefabInstance: {fileID: 1599025067}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> e83c598efde7b339a7df345f151a7b76c9b19b4d
 --- !u!1 &1601739299
 GameObject:
   m_ObjectHideFlags: 0

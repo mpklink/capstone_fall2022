@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 5b46853881a4249678d9344c85f32229
 =======
 guid: ab8c53d48bc924e4ea9c1f160a83cc1d
 >>>>>>> 2055530ae4a7b1a57241f387d0bbb31ee249d15d
+=======
+<<<<<<< HEAD:Assets/01_AssetStore/DoorPackFree/Meshes/Door001/V2.meta
+guid: efef82fd4a4ee134cb2609bd47625bf9
+=======
+guid: ab8c53d48bc924e4ea9c1f160a83cc1d
+>>>>>>> e83c598efde7b339a7df345f151a7b76c9b19b4d:Assets/01_AssetStore/DoorPackFree.meta
+>>>>>>> e83c598efde7b339a7df345f151a7b76c9b19b4d
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
