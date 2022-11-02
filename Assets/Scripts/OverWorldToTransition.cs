@@ -18,12 +18,13 @@ public class OverWorldToTransition : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider collision)
-    {
-        if(collision.gameObject.name == "FPSController")
-        {
-            Debug.Log("Collision detected, Transition to Lobby");
-            SceneManager.LoadScene("Lobby");
-        }
-    }
+    //// This probably can be removed.
+    //private void OnTriggerEnter(Collider collision)
+    //{
+    //    if(collision.gameObject.name == "FPSController")
+    //    {
+    //        Debug.Log("Collision detected, Transition to Lobby");
+    //        SceneManager.LoadScene("Lobby");
+    //    }
+    //}
 }

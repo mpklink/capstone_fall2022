@@ -32,10 +32,11 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("OverworldDoor"))
         {
-            //GlobalVariables.current[0] = other.GetComponent<Building>().BlockNum;
-            //GlobalVariables.current[1] = other.GetComponent<Building>().BuildingNum;
-            Global.current[0] = Global.winning[0]; // This is temporary, delete when not needed for testing
-            Global.current[1] = Global.winning[1]; // This is temporary, delete when not needed for testing
+            Global.current[0] = other.GetComponent<Building>().BlockNum;
+            Global.current[1] = other.GetComponent<Building>().BuildingNum;
+            Debug.Log(Global.current[0] + " and " + Global.current[1]);
+            //Global.current[0] = Global.winning[0]; // This is temporary, delete when not needed for testing
+            //Global.current[1] = Global.winning[1]; // This is temporary, delete when not needed for testing
             SceneManager.LoadScene("Lobby");
         }
         if (other.CompareTag("LobbyToLibrary"))

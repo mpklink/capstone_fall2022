@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - OverworldDoor
+  - Building1
+  - Building2
+  - Building3
+  - Block
   layers:
   - Default
   - TransparentFX
