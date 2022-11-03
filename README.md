@@ -1,10 +1,16 @@
 Lotto visualization simulation game.  This is a webgl game built in unity that will allow the user to visualize low probability outcome environments by having the player walk through a large world of buildings, each representing 69 floors of libraries.  The user is challenged with finding the single book contained within the right library, floor and bookshelf in order to win the game. 
 
 Release Notes:
+<<<<<<< HEAD
 Currently the game is split across multiple code branches while some of the scenes and prefabs are being constructed individually. 
 
 10/20/22:
 Merged all active scenes into the development branch after everyone added trags and box colliders.  Added global variables that will persist across scene changes and added the player code to change scenes. 
+=======
+Currently the game is split across multiple code branches while some of the scenes and prefabs are being constructed individually.
+
+10/20/22: Merged all active scenes into the development branch after everyone added trags and box colliders. Added global variables that will persist across scene changes and added the player code to change scenes.
+>>>>>>> 7647390db1a57df96a8bdf47b393b23c0ce46616
 
 PlayerPrefab branch: 
 This branch is where the player prefab that will be shared across all scenes is being constructed.  The player will be a blocky charcter similar to what you see in games like minecraft.  Currently just the basic outlines and camera movements are implemented. 
