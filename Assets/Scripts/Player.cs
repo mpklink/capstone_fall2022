@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public float turningSpeed = 60;
 
     private GlobalVariables Global;
+    private DoorToLobby door;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,8 @@ public class Player : MonoBehaviour
         {
             //Global.current[0] = other.GetComponent<Building>().BlockNum;
             //Global.current[1] = other.GetComponent<Building>().BuildingNum;
-            Debug.Log(Global.current[0] + " and " + Global.current[1]);
+            //Debug.Log(Global.current[0] + " and " + Global.current[1]);
+  
             //Global.current[0] = Global.winning[0]; // This is temporary, delete when not needed for testing
             //Global.current[1] = Global.winning[1]; // This is temporary, delete when not needed for testing
             SceneManager.LoadScene("Lobby");
