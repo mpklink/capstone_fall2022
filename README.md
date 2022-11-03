@@ -35,23 +35,23 @@ Merged all active scenes into the development branch after everyone added trags 
 ------------------------------
 All Changes are currently only in the Development Branch, but changes are as follows:
 
-Player Prefab
+Player Prefab:
 Camera and player movement changed, instead of up/down/left/right, it is now rotational with forward/back 
 type movement
 Current Bug: Player freaks out when a collision is detected and throws player
 
-Overworld
+Overworld:
 Polished assets that were glitching (roads were glitching)
 
-Lobby
+Lobby:
 Added scene and it now contains a room and an elvator to walk into
 Elevator now contains an animation 
 Elevator entry prompts user to input the floor they want to go to
 Current Bug: Number input is glitched
 
-Library Scene
+Library Scene:
 Made scene layout be 69 x 69 to be accurate to powerball tickets from the global variables scene
 Updated scripts to take in 69 by 69 value based on row and column
 
-Bookshelf scene
+Bookshelf scene:
 Changed orinetation based on bookshelf prefab, and alligned it based on scene before it
