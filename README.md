@@ -1,9 +1,34 @@
 Lotto visualization simulation game.  This is a webgl game built in unity that will allow the user to visualize low probability outcome environments by having the player walk through a large world of buildings, each representing 69 floors of libraries.  The user is challenged with finding the single book contained within the right library, floor and bookshelf in order to win the game. 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 Release Notes:
 Currently the game is split across multiple code branches while some of the scenes and prefabs are being constructed individually.
 
 10/20/22: Merged all active scenes into the development branch after everyone added trags and box colliders. Added global variables that will persist across scene changes and added the player code to change scenes.
+
+
+11/3/22: All Changes are currently only in the Development Branch, but changes are as follows:
+
+Player Prefab
+Camera and player movement changed, instead of up/down/left/right, it is now rotational with forward/back 
+type movement
+Current Bug: Player freaks out when a collision is detected and throws player
+
+Overworld
+Polished assets that were glitching (roads were glitching)
+
+Lobby
+Added scene and it now contains a room and an elvator to walk into
+Elevator now contains an animation 
+Elevator entry prompts user to input the floor they want to go to
+Current Bug: Number input is glitched
+
+Library Scene
+Made scene layout be 69 x 69 to be accurate to powerball tickets from the global variables scene
+Updated scripts to take in 69 by 69 value based on row and column
+
+Bookshelf scene
+Changed orinetation based on bookshelf prefab, and alligned it based on scene before it
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 PlayerPrefab branch: 
 This branch is where the player prefab that will be shared across all scenes is being constructed.  The player will be a blocky charcter similar to what you see in games like minecraft.  Currently just the basic outlines and camera movements are implemented. 
