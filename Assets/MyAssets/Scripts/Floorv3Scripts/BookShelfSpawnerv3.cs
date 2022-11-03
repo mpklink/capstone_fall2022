@@ -27,6 +27,9 @@ public class BookShelfSpawnerv3 : MonoBehaviour
     // How many bookshelves to spawn
     public int bookShelfsToSpawn;
 
+    // How many bookshelves to spawn
+    public int bookShelvesinRow = 34;
+
     Quaternion orientation = Quaternion.Euler(0, 0, 0);
 
 
@@ -70,6 +73,7 @@ public class BookShelfSpawnerv3 : MonoBehaviour
         float trueSpaceBetweenRows = spaceBetweenRows + 1f;
 
         int counter = 0;
+        bookShelvesinRow -= 1;
 
         for (int i = 0; i < bookShelfsToSpawn; i++)
         {
@@ -77,7 +81,7 @@ public class BookShelfSpawnerv3 : MonoBehaviour
             SpawnBookShelf(pos);
 
             //Initial Condition
-            if (counter < 33)
+            if (counter < bookShelvesinRow)
             {
                 xHelper += trueSpaceBetweenShleves;
                 counter++;
