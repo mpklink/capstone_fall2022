@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &24061364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5727765983834054240, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_Name
+      value: Book Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 406.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -110.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727765983834054252, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
 --- !u!1 &49041473
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +233,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -274,7 +331,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -372,7 +429,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -470,7 +527,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -665,7 +722,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -763,7 +820,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -825,7 +882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146ae673ba8a9b248aebebc32e2371cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookShelfPrefab: {fileID: 5727765983834054240, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+  bookShelfPrefab: {fileID: 1076898285072330748, guid: d3d5e1d3f4b40dc44aeba9f960fc08e7, type: 3}
   floorMeshPrefab: {fileID: 462339873}
   spaceBetweenShelves: 2
   spaceBetweenRows: 4
@@ -884,7 +941,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -962,7 +1019,7 @@ Transform:
   - {fileID: 1601739303}
   - {fileID: 1104057811}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &838295922 stripped
 GameObject:
@@ -981,7 +1038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146ae673ba8a9b248aebebc32e2371cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookShelfPrefab: {fileID: 5727765983834054240, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+  bookShelfPrefab: {fileID: 1076898285072330748, guid: d3d5e1d3f4b40dc44aeba9f960fc08e7, type: 3}
   floorMeshPrefab: {fileID: 838295922}
   spaceBetweenShelves: 2
   spaceBetweenRows: 4
@@ -1004,7 +1061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146ae673ba8a9b248aebebc32e2371cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookShelfPrefab: {fileID: 5727765983834054240, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+  bookShelfPrefab: {fileID: 1076898285072330748, guid: d3d5e1d3f4b40dc44aeba9f960fc08e7, type: 3}
   floorMeshPrefab: {fileID: 873121728}
   spaceBetweenShelves: 2
   spaceBetweenRows: 4
@@ -1053,7 +1110,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &929498628
 GameObject:
@@ -1108,7 +1165,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1170,7 +1227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 146ae673ba8a9b248aebebc32e2371cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bookShelfPrefab: {fileID: 5727765983834054240, guid: 977c4e106881edf48860c9a3d67a9aa7, type: 3}
+  bookShelfPrefab: {fileID: 1076898285072330748, guid: d3d5e1d3f4b40dc44aeba9f960fc08e7, type: 3}
   floorMeshPrefab: {fileID: 941157291}
   spaceBetweenShelves: 2
   spaceBetweenRows: 4
@@ -1229,7 +1286,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1337,6 +1394,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7983742900236006463, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c6b121bff1da224e955d001445a887e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
 --- !u!1001 &1044956303
@@ -1348,7 +1409,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6119015309889682032, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6119015309889682032, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
       propertyPath: m_LocalScale.x
@@ -1402,6 +1463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookShelfPlane
       objectReference: {fileID: 0}
+    - target: {fileID: 6119015309889682038, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f2ed6aa9d03b6ba45994855986762c65, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
 --- !u!1001 &1074537369
@@ -1413,7 +1478,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6119015309889682032, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6119015309889682032, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
       propertyPath: m_LocalScale.x
@@ -1467,6 +1532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookShelfPlane (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6119015309889682038, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f2ed6aa9d03b6ba45994855986762c65, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
 --- !u!1 &1104057810
@@ -1719,7 +1788,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1870,7 +1939,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6119015309889682032, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6119015309889682032, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
       propertyPath: m_LocalScale.x
@@ -1924,6 +1993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookShelfPlane (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6119015309889682038, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f2ed6aa9d03b6ba45994855986762c65, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
 --- !u!1001 &1586545237
@@ -1939,7 +2012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5685503285646412016, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5685503285646412016, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -1989,6 +2062,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7983742900236006463, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c6b121bff1da224e955d001445a887e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
 --- !u!1001 &1599025067
@@ -2004,7 +2081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3088028984722568281, guid: 96424a0461ccd8641b934b82da5c0aaa, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3088028984722568281, guid: 96424a0461ccd8641b934b82da5c0aaa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2203,7 +2280,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2257,7 +2334,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6119015309889682032, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6119015309889682032, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
       propertyPath: m_LocalScale.x
@@ -2311,6 +2388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookShelfPlane (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6119015309889682038, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f2ed6aa9d03b6ba45994855986762c65, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c99cc1c409825ed4698653be6c9bbb84, type: 3}
 --- !u!1 &1763384695
@@ -2356,7 +2437,7 @@ Transform:
   - {fileID: 1201341686}
   - {fileID: 2064693208}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1768058460
 GameObject:
@@ -2411,7 +2492,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2509,7 +2590,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2646,7 +2727,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &2064693204
 GameObject:
@@ -2701,7 +2782,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cca390a252aef1e4b849472cd268e151, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2759,7 +2840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5685503285646412016, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5685503285646412016, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -2805,6 +2886,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7983742900236006463, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5b2f33a722a2ad848bcb7dee355c9e96, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
 --- !u!1 &2102296153
@@ -2903,7 +2988,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3499461122419047218
 PrefabInstance:
@@ -2918,7 +3003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5685503285646412016, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5685503285646412016, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
       propertyPath: m_LocalScale.x
@@ -2964,5 +3049,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7983742900236006463, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5b2f33a722a2ad848bcb7dee355c9e96, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91b8f74a73d0a2d42b82c534b687243c, type: 3}
