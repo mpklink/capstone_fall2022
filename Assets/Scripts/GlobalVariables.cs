@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour
 {
-    public int[] winning = new int[5];
-    public int[] current = new int[5];
+    public int[] winning = new int[6];
+    public int[] current = new int[6];
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +18,11 @@ public class GlobalVariables : MonoBehaviour
         winning[2] = Random.Range(1, 69);
 
         // Library scene
-        //winning[3] = Random.Range(1, 69);
-        //winning[4] = Random.Range(1, 69);
-        winning[3] = Random.Range(1, 4761);
+        winning[3] = Random.Range(1, 69);
+        winning[4] = Random.Range(1, 69);
 
         // Book selection scene
-        winning[4] = Random.Range(1, 25);
+        winning[5] = Random.Range(1, 25);
 
         // Overworld
         current[0] = 0;
@@ -34,11 +33,10 @@ public class GlobalVariables : MonoBehaviour
         
         // Library
         current[3] = 0;
+        current[4] = 0;
 
         // Book Selection
-        current[4] = 0;
-        
-        //current[5] = 0;
+        current[5] = 0;
     }
 
     private void Awake()

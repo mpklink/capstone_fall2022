@@ -51,9 +51,50 @@ public class Player : MonoBehaviour
         {
             //GlobalVariables.current[0] = other.GetComponent<Building>().BlockNum;
             //GlobalVariables.current[1] = other.GetComponent<Building>().BuildingNum;
-            Global.current[3] = Global.winning[3]; // This is temporary, delete when not needed for testing
-            Global.current[4] = Global.winning[4]; // This is temporary, delete when not needed for testing
+            int[] xzValues = new int[2];
+
+            Vector3 bksValues = other.transform.position;
+
+            xzValues = CalculateRowColumn(bksValues.x, bksValues.y);
+
+
+
+            Global.current[3] = xzValues[0]; // This is temporary, delete when not needed for testing
+            Global.current[4] = xzValues[1]; // This is temporary, delete when not needed for testing
             SceneManager.LoadScene("Bookshelf");
         }
+    }
+
+    // This method converts coordinates into a row column # to compare against the pre-gen values for the
+    // library scene
+    private int[] CalculateRowColumn(float xValue, float zValue)
+    {
+        int[] result = new int[2];
+        int rowNum = 0;
+        int columnNum = 0;
+        // Find the row number using our zValue  
+        if (zValue > 0)
+        {
+            rowNum = (int)(((184.5f - zValue) / 5f) + 1f);
+        }
+
+        else if (zValue < 0)
+        {
+            rowNum = (int)(((184.5f - zValue + 1f) / 5f) + 4f);
+        }
+
+        // Find the column number using our xValue     
+        if (xValue < 0)
+        {
+            columnNum = (int)(((178.5f + xValue) / 5f) + 1f);
+        }
+
+        else if (xValue > 0)
+        {
+            columnNum = (int)(((178.5f + xValue - 2) / 5f) - 3f);
+        }
+        Debug.Log("Row number is: " + rowNum);
+        Debug.Log("Column Number is: " + columnNum);
+        return result;
     }
 }

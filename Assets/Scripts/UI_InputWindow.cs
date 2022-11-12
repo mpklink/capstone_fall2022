@@ -36,12 +36,12 @@ public class UI_InputWindow : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void OnEnterButton()
+    public void FloorSelect()
     {
         Debug.Log(field.text);
         int num = int.Parse(field.text);
-        //globalVar.current[2] = num;
-        //Debug.Log(globalVar.current[2]);
+        globalVar.current[2] = num;
+        Debug.Log(globalVar.current[2]);
         SceneManager.LoadScene("LibraryFloor");
     }
 
