@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scripts/OverWorldToTransition.cs.meta
 <<<<<<< HEAD
 <<<<<<< HEAD
 guid: 6e091e1332bdf460c8d473f0836fbce8
@@ -8,6 +9,9 @@ guid: 57743abf3360d1246abda84f8c4def80
 =======
 guid: 57743abf3360d1246abda84f8c4def80
 >>>>>>> e83c598efde7b339a7df345f151a7b76c9b19b4d
+=======
+guid: a8a7bf6bbead74d2391b7e9b76712dbc
+>>>>>>> 871c3085e7a997a01fb914ec5a95e27bf21f5a86:Assets/Scripts/DoorToLobby.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

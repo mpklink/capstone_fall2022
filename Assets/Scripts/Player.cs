@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public float turningSpeed = 60;
 
     private GlobalVariables Global;
+    private DoorToLobby door;
     // Start is called before the first frame update
     void Start()
     {

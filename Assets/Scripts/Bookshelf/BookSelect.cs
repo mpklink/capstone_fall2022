@@ -38,7 +38,7 @@ public class BookSelect : MonoBehaviour
                 {
                     endGame = true;
                     Global.current[Global.current.Length - 1] = books[i].GetComponent<BookData>().bookNumber;
-                    Global.current[5] = Global.winning[5];
+                    Global.current[4] = Global.winning[4];
 
                     break;
                 }
