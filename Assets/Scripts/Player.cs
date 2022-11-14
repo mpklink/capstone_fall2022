@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
 {
@@ -10,12 +11,15 @@ public class Player : MonoBehaviour
     public float turningSpeed = 60;
 
     private GlobalVariables Global;
+    Vector3 movement;
+    Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
         Global = FindObjectOfType<GlobalVariables>();
         //Debug.Log(Global.winning[0].ToString() + " " + Global.winning[1].ToString() + " " + Global.winning[2].ToString() + " " + Global.winning[3].ToString() + " " + Global.winning[4].ToString() + " " + Global.winning[5].ToString());
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -24,10 +28,23 @@ public class Player : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal") * turningSpeed * Time.deltaTime;
         transform.Rotate(0, horizontal, 0);
 
-        float vertical = Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime;
-        transform.Translate(0, 0, vertical);
+        //float vertical = Input.GetAxis("Vertical") * movementSpeed * Time.deltaTime;
+        //transform.Translate(0, 0, vertical);
+        movement = new Vector3(0, 0,Input.GetAxis("Vertical"));
+
     }
 
+    private void FixedUpdate()
+    {
+        moveCharacter(movement);
+    }
+
+    void moveCharacter(Vector3 direction)
+    {
+        direction = rb.rotation * direction;
+
+        rb.MovePosition(rb.position + direction * movementSpeed * Time.fixedDeltaTime);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("OverworldDoor"))
