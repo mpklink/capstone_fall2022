@@ -138,20 +138,19 @@ public class Block : MonoBehaviour
                 GameObject right_block = Instantiate(block, pos_right, Quaternion.identity);
                 set_block_num(right_block);
                 blocks_lower_right.Add(right_block);
-                right_block.SetActive(false);
                 const_posX += 1000;
             }
             const_posX = 1000;
             neg_const_posY -= 421;
             blocks_lower_right.Add(lower_block);
-            lower_block.SetActive(false);
+           
         }
-        //// Set all Lower Right Quadrant Blocks
-        //for (int i = 0; i < blocks_lower_right.Count; i++)
-        //{
-        //    blocks_lower_right[i].SetActive(false);
+        // Set all Lower Right Quadrant Blocks
+        for (int i = 0; i < blocks_lower_right.Count; i++)
+        {
+            blocks_lower_right[i].SetActive(false);
 
-        //}
+        }
 
     }
 
@@ -177,12 +176,16 @@ public class Block : MonoBehaviour
         {
             
             current_pos_z = Mathf.Abs(player.transform.position.z - blocks_upper_row[i].transform.position.z);
-            current_pos_x = Mathf.Abs(player.transform.position.z - blocks_upper_row[i].transform.position.x);
+            current_pos_x = Mathf.Abs(player.transform.position.x - blocks_upper_row[i].transform.position.x);
 
             // Check player proximity
             if (Mathf.Sqrt(current_pos_x*current_pos_x + current_pos_z* current_pos_z) < 1000)
             {
                 blocks_upper_row[i].SetActive(true);
+            }
+            else
+            {
+                blocks_upper_row[i].SetActive(false);
             }
         }
 
@@ -191,26 +194,52 @@ public class Block : MonoBehaviour
         {
 
             current_pos_z = Mathf.Abs(player.transform.position.z - blocks_upper_right[i].transform.position.z);
-            current_pos_x = Mathf.Abs(player.transform.position.z - blocks_upper_right[i].transform.position.x);
+            current_pos_x = Mathf.Abs(player.transform.position.x - blocks_upper_right[i].transform.position.x);
 
             // Check player proximity
             if (Mathf.Sqrt(current_pos_x * current_pos_x + current_pos_z * current_pos_z) < 1000)
             {
                 blocks_upper_right[i].SetActive(true);
             }
+            else
+            {
+                blocks_upper_right[i].SetActive(false);
+            }
         }
 
-        // Set all Upper Right Quadrant true or false by proximity
+        // Set all Upper Left Quadrant true or false by proximity
+        for (int i = 0; i < blocks_upper_left.Count; i++)
+        {
+
+            current_pos_z = Mathf.Abs(player.transform.position.z - blocks_upper_left[i].transform.position.z);
+            current_pos_x = Mathf.Abs(player.transform.position.x - blocks_upper_left[i].transform.position.x);
+
+            // Check player proximity
+            if (Mathf.Sqrt(current_pos_x * current_pos_x + current_pos_z * current_pos_z) < 1000)
+            {
+                blocks_upper_left[i].SetActive(true);
+            }
+            else
+            {
+                blocks_upper_left[i].SetActive(false);
+            }
+        }
+
+        // Set all Lower Right Quadrant true or false by proximity
         for (int i = 0; i < blocks_lower_right.Count; i++)
         {
 
             current_pos_z = Mathf.Abs(player.transform.position.z - blocks_lower_right[i].transform.position.z);
-            current_pos_x = Mathf.Abs(player.transform.position.z - blocks_lower_right[i].transform.position.x);
+            current_pos_x = Mathf.Abs(player.transform.position.x - blocks_lower_right[i].transform.position.x);
 
             // Check player proximity
             if (Mathf.Sqrt(current_pos_x * current_pos_x + current_pos_z * current_pos_z) < 1000)
             {
                 blocks_lower_right[i].SetActive(true);
+            }
+            else
+            {
+                blocks_lower_right[i].SetActive(false);
             }
         }
 
