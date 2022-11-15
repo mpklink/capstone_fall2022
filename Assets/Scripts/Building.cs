@@ -5,7 +5,8 @@ using UnityEngine;
 public class Building : MonoBehaviour
 {
     public int BuildingNum = 42;
-    public int BlockNum = 24;
+    public int BlockNum = 1;
+
 
     // Start is called before the first frame update
     void Start()

@@ -10,13 +10,11 @@ public class Player : MonoBehaviour
     public float turningSpeed = 60;
 
     private GlobalVariables Global;
-    private DoorToLobby door;
+    
     // Start is called before the first frame update
     void Start()
     {
         Global = FindObjectOfType<GlobalVariables>();
-        //Debug.Log(Global.winning[0].ToString() + " " + Global.winning[1].ToString() + " " + Global.winning[2].ToString() + " " + Global.winning[3].ToString() + " " + Global.winning[4].ToString() + " " + Global.winning[5].ToString());
-        
     }
 
     // Update is called once per frame
@@ -33,9 +31,9 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("OverworldDoor"))
         {
-            //Global.current[0] = other.GetComponent<Building>().BlockNum;
-            //Global.current[1] = other.GetComponent<Building>().BuildingNum;
-            //Debug.Log(Global.current[0] + " and " + Global.current[1]);
+            Global.current[0] = other.GetComponentInParent<Building>().BlockNum;
+            Global.current[1] = other.GetComponentInParent<Building>().BuildingNum;
+            Debug.Log(Global.current[0] + " and " + Global.current[1]);
   
             //Global.current[0] = Global.winning[0]; // This is temporary, delete when not needed for testing
             //Global.current[1] = Global.winning[1]; // This is temporary, delete when not needed for testing
@@ -55,6 +53,16 @@ public class Player : MonoBehaviour
             Global.current[3] = Global.winning[3]; // This is temporary, delete when not needed for testing
             Global.current[4] = Global.winning[4]; // This is temporary, delete when not needed for testing
             SceneManager.LoadScene("Bookshelf");
+        }
+        
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Wall"))
+        {
+            Destroy(other.gameObject);
         }
     }
 }

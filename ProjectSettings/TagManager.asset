@@ -12,6 +12,7 @@ TagManager:
   - Building1
   - Building2
   - Building
+  - Wall
   layers:
   - Default
   - TransparentFX
