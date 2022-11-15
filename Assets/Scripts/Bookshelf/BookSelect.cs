@@ -22,10 +22,11 @@ public class BookSelect : MonoBehaviour
         Global = FindObjectOfType<GlobalVariables>();
 
         books = GameObject.FindGameObjectsWithTag("Book");
-        for(int i = 0; i < books.Length; i++)
+        Debug.Log("Total Books: " + books.Length);
+        /*for(int i = 0; i < books.Length; i++)
         {
             books[i].GetComponent<BookData>().bookNumber = i;
-        }
+        }*/
     }
 
     private void Update()
@@ -38,7 +39,7 @@ public class BookSelect : MonoBehaviour
                 {
                     endGame = true;
                     Global.current[Global.current.Length - 1] = books[i].GetComponent<BookData>().bookNumber;
-                    Global.current[4] = Global.winning[4];
+                    //Global.current[5] = Global.winning[5];
 
                     break;
                 }
