@@ -126,31 +126,31 @@ public class Block : MonoBehaviour
         }
 
         const_posX = 1000;
-        //Instantiate Lower Right Quadrant Blocks (20)
-        for (int i = 1; i < 5; i++)
-        {
-            Vector3 pos_low = new Vector3(0, 0, neg_const_posY);
-            GameObject lower_block = Instantiate(block, pos_low, Quaternion.identity);
-            set_block_num(lower_block);
-            for (int j = 1; j < 5; i++)
-            {
-                Vector3 pos_right = new Vector3(const_posX, 0, neg_const_posY);
-                GameObject right_block = Instantiate(block, pos_right, Quaternion.identity);
-                set_block_num(right_block);
-                blocks_lower_right.Add(right_block);
-                const_posX += 1000;
-            }
-            const_posX = 1000;
-            neg_const_posY -= 421;
-            blocks_lower_right.Add(lower_block);
+        ////Instantiate Lower Right Quadrant Blocks (20)
+        //for (int i = 1; i < 5; i++)
+        //{
+        //    Vector3 pos_low = new Vector3(0, 0, neg_const_posY);
+        //    GameObject lower_block = Instantiate(block, pos_low, Quaternion.identity);
+        //    set_block_num(lower_block);
+        //    for (int j = 1; j < 5; i++)
+        //    {
+        //        Vector3 pos_right = new Vector3(const_posX, 0, neg_const_posY);
+        //        GameObject right_block = Instantiate(block, pos_right, Quaternion.identity);
+        //        set_block_num(right_block);
+        //        blocks_lower_right.Add(right_block);
+        //        const_posX += 1000;
+        //    }
+        //    const_posX = 1000;
+        //    neg_const_posY -= 421;
+        //    blocks_lower_right.Add(lower_block);
            
-        }
-        // Set all Lower Right Quadrant Blocks
-        for (int i = 0; i < blocks_lower_right.Count; i++)
-        {
-            blocks_lower_right[i].SetActive(false);
+        //}
+        //// Set all Lower Right Quadrant Blocks
+        //for (int i = 0; i < blocks_lower_right.Count; i++)
+        //{
+        //    blocks_lower_right[i].SetActive(false);
 
-        }
+        //}
 
     }
 
