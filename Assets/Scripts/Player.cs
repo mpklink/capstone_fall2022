@@ -68,9 +68,12 @@ public class Player : MonoBehaviour
             int[] xzValues = new int[2];
 
             Vector3 bksValues = other.transform.position;
+            Debug.Log("Book raw xValue is: " + bksValues.x);
+            Debug.Log("Book raw yValue is: " + bksValues.z);
 
-            xzValues = CalculateRowColumn(bksValues.x, bksValues.y);
-
+            xzValues = CalculateRowColumn(bksValues.x, bksValues.z);
+            Debug.Log("xValue is: " + xzValues[0]);
+            Debug.Log("yValue is: " + xzValues[1]);
 
 
             Global.current[3] = xzValues[0]; // This is temporary, delete when not needed for testing
@@ -109,6 +112,8 @@ public class Player : MonoBehaviour
         }
         Debug.Log("Row number is: " + rowNum);
         Debug.Log("Column Number is: " + columnNum);
+        result[0] = columnNum;
+        result[1] = rowNum;
         return result;
     }
 }
