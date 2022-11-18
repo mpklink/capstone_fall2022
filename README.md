@@ -70,6 +70,12 @@ Lobby:
 Fixed the number input popup when the user enters the elevated and that value now properly passes to the next scenes as the 3rd value in the "lotter"
 
 Library Scene:
+Added a bookshelf prefab that looks more detailed
+Changed lighting in scene to increase performance
+Added symmetrical walls
+Scene now passes current value properly based on player decision
+Changed player position at start of the scene
+Added elevator to scene to make it look more consistent from the lobby scene
 
 Bookshelf scene:
 Updated the skin for the bookshelf so it matches the look of the bookshelves from the library scene. The win/loose script is now working however the chances of winning are very rare by design.  
