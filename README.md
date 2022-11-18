@@ -55,3 +55,21 @@ Updated scripts to take in 69 by 69 value based on row and column
 
 Bookshelf scene:
 Changed orinetation based on bookshelf prefab, and alligned it based on scene before it
+
+11/17/2022
+------------------------------
+All changes are still pushed to the development Branch with the exception of the webGL build and doxygen which are located http://csci3510.klinksys.net/Capstone/ and http://csci3510.klinksys.net/Doxygen/ respectively. 
+
+Player Prefab:
+We fixed the bug where the player is thrown drom the walls during a collsion that that does not initiate a trigger, but we are having an issue now where a user can push past the collsion and walk through walls. The OnCollisionEnter script has now been updated to read the variables of the overworld and bookshelves to grab the proper numbers presented by the collision objects to attempt to "win" the game.
+
+Overworld:
+The runtime creation of the building has been expanded to additional city blocks and the buildings withing the blocks all now have doors.  All of the buildings now have two variables which are called from the player prefab on collision to select the first two numbers of the "lottery".
+
+Lobby:
+Fixed the number input popup when the user enters the elevated and that value now properly passes to the next scenes as the 3rd value in the "lotter"
+
+Library Scene:
+
+Bookshelf scene:
+Updated the skin for the bookshelf so it matches the look of the bookshelves from the library scene. The win/loose script is now working however the chances of winning are very rare by design.  
