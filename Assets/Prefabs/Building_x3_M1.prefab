@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5348044999310021475}
   m_Layer: 0
   m_Name: Building_x3_M1
-  m_TagString: Building3
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
