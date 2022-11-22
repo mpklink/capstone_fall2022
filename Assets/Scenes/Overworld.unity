@@ -374,16 +374,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   block: {fileID: 2191823028234283311, guid: 2286364712fa04102af1cbcabe807f7a, type: 3}
-  new_block: {fileID: 0}
+  player: {fileID: 0}
   BlockNum: 0
   b_num: 0
   nums: 
   builds: []
-  left_wall: 0
-  right_wall: 0
-  up_wall: 0
-  low_wall: 0
+  init: 1
   pos: []
+  rows: 9
+  cols: 8
+  pla_curr_x: 0
+  pla_curr_z: 0
+  block_curr_x: 0
+  block_curr_z: 0
+  current_pos_x: 0
+  current_pos_z: 0
+  total_curr: 0
+  updt_i: 0
+  updt_j: 0
 --- !u!1 &962489445
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3088028984722568281, guid: 96424a0461ccd8641b934b82da5c0aaa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 330.5
+      value: 331.9
       objectReference: {fileID: 0}
     - target: {fileID: 3088028984722568281, guid: 96424a0461ccd8641b934b82da5c0aaa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -529,7 +537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3088028984722568281, guid: 96424a0461ccd8641b934b82da5c0aaa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 166.8
+      value: 167.6
       objectReference: {fileID: 0}
     - target: {fileID: 3088028984722568281, guid: 96424a0461ccd8641b934b82da5c0aaa, type: 3}
       propertyPath: m_LocalRotation.w
