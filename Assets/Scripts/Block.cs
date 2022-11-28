@@ -57,10 +57,6 @@ public class Block : MonoBehaviour
     public int updt_i;
     public int updt_j;
 
-    // In terms of instantiate the blocks? Create a 3x3 initial instantiation.
-    // Create invisible barriers, ex. go right, if crossed x = 500, then get that wall x = 500 +100, instantiate new right.
-    // get x = 500 + 500, and do up = x = 1000, z = ???
-
     // Use this for initialization
     void Start()
     {
@@ -71,12 +67,6 @@ public class Block : MonoBehaviour
         b_num = block.GetComponentInChildren<Building>().BlockNum;
         nums.Add(b_num);
 
-
-        // Grid VERSION
-        // (9,8) array
-        // [8][5,6,7] -> FALSE forever
-        // [4][3] -> center arbitrary TRUE
-        //Dictionary {(i,j):(gameobject)}
 
         // Init the grid with false values -> No block created
         for (int i = 0; i < rows; i++)
@@ -184,7 +174,7 @@ public class Block : MonoBehaviour
     IEnumerator CheckPosition()
     {
         // Wait for checking
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(9);
 
         // Get current player position
         pla_curr_x = player.transform.position.x;
