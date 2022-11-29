@@ -4,10 +4,7 @@ using UnityEngine;
 
 /* This script does the selection of a book. */
 public class BookSelect : MonoBehaviour
-{
-    //private int[] winningNumbers = {50, 50, 50, 50, 50, 10};
-    //private int[] currentNumbers = {50, 50, 50, 50, 50, -1};
-    
+{   
     public GameObject win;
     public GameObject lose;
 
@@ -15,18 +12,20 @@ public class BookSelect : MonoBehaviour
     private GameObject selectedBook;
     private bool endGame = false;
 
+    private AudioSource audioSource;
+    public AudioClip winSound;
+    public AudioClip loseSound;
+    public float volume;
+
     private GlobalVariables Global;
 
     private void Start()
     {   
         Global = FindObjectOfType<GlobalVariables>();
+        audioSource = GetComponent<AudioSource>();
 
         books = GameObject.FindGameObjectsWithTag("Book");
         Debug.Log("Total Books: " + books.Length);
-        /*for(int i = 0; i < books.Length; i++)
-        {
-            books[i].GetComponent<BookData>().bookNumber = i;
-        }*/
     }
 
     private void Update()
@@ -39,7 +38,6 @@ public class BookSelect : MonoBehaviour
                 {
                     endGame = true;
                     Global.current[Global.current.Length - 1] = books[i].GetComponent<BookData>().bookNumber;
-                    //Global.current[5] = Global.winning[5];
 
                     break;
                 }
@@ -85,12 +83,14 @@ public class BookSelect : MonoBehaviour
     {
         int bookNumber = Global.current[Global.current.Length - 1];
         Debug.Log("Book " + bookNumber + " is the winner!");
+        audioSource.PlayOneShot(winSound, volume);
         win.gameObject.SetActive(true);
     }
     private void YouLose()
     {
         int bookNumber = Global.current[Global.current.Length - 1];
         Debug.Log("Book " + bookNumber + " is NOT the winner.");
+        audioSource.PlayOneShot(loseSound, volume);
         lose.gameObject.SetActive(true);
     }
 

@@ -11,11 +11,16 @@ public class BookData : MonoBehaviour
 
     public bool endFound = false;
 
+    public AudioClip mouseOverSound;
+    private AudioSource audioSource;
+    private bool soundPlayed = false;
+
     // Start is called before the first frame update
     void Start()
     {
         defaultMaterial = GetComponent<MeshRenderer>().material;
         halo = (Behaviour)GetComponent("Halo");
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -29,6 +34,10 @@ public class BookData : MonoBehaviour
     private void OnMouseOver(){
         if(!endFound)
         {
+            if(!soundPlayed) {
+                audioSource.PlayOneShot(mouseOverSound, 1.0f - 0.9f/bookNumber);
+                soundPlayed = true;
+            }
             GetComponent<MeshRenderer>().material = glowMaterial;
 
             // Check for left mouse click.
@@ -42,6 +51,7 @@ public class BookData : MonoBehaviour
     private void OnMouseExit()
     {
         GetComponent<MeshRenderer>().material = defaultMaterial;
+        soundPlayed = false;
     }
 
 }
