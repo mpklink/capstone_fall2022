@@ -35,7 +35,8 @@ public class BookData : MonoBehaviour
         if(!endFound)
         {
             if(!soundPlayed) {
-                audioSource.PlayOneShot(mouseOverSound, 1.0f - 0.9f/bookNumber);
+                int volumeAdjustment = (bookNumber - 1) / 5;
+                audioSource.PlayOneShot(mouseOverSound, 0.5f + (float)volumeAdjustment/4.0f);
                 soundPlayed = true;
             }
             GetComponent<MeshRenderer>().material = glowMaterial;
