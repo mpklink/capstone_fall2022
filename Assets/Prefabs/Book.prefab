@@ -454,7 +454,7 @@ MonoBehaviour:
   bookNumber: 0
   glowMaterial: {fileID: 2100000, guid: 9bbabaa80456d9d40b9f382f957c17f5, type: 2}
   endFound: 0
-  mouseOverSound: {fileID: 8300000, guid: 9b88376608d386441b808ddbf68160be, type: 3}
+  mouseOverSound: {fileID: 8300000, guid: 1c0af91052d18c54aa5a26fa5c0a4374, type: 3}
 --- !u!82 &617100820492110877
 AudioSource:
   m_ObjectHideFlags: 0

@@ -287,8 +287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   win: {fileID: 1133190780}
   lose: {fileID: 1813587335}
-  winSound: {fileID: 8300000, guid: fc14f5f2425eaab42b7980b9f219b338, type: 3}
-  loseSound: {fileID: 8300000, guid: 2fa9509c903b4f143a2ea48ba1855705, type: 3}
+  winSound: {fileID: 8300000, guid: 37831862d6e3c8941b36efcaaedbf74c, type: 3}
+  loseSound: {fileID: 8300000, guid: adbe67ee758d51146967194278356011, type: 3}
   volume: 1
 --- !u!4 &361778459
 Transform:
@@ -856,7 +856,7 @@ RectTransform:
   m_GameObject: {fileID: 1133190780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1057256987}
@@ -1227,7 +1227,7 @@ RectTransform:
   m_GameObject: {fileID: 1813587335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1057256987}
