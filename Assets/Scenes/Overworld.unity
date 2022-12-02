@@ -645,5 +645,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: OverWorld_PlaneM1
       objectReference: {fileID: 0}
+    - target: {fileID: 7111509304712544697, guid: 641d3bcacd34c4f4f8059621a3442af9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 641d3bcacd34c4f4f8059621a3442af9, type: 3}
