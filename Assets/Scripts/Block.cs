@@ -28,10 +28,10 @@ public class Block : MonoBehaviour
     public List<float> pos = new();
 
     // Create constante X and Z positions.
-    int const_posX = 1000;
+    int const_posX = 999;
     int neg_const_posX = -999;
-    int const_posZ = 473;
-    int neg_const_posZ = -421;
+    int const_posZ = 472;
+    int neg_const_posZ = -420;
 
 
     /*
