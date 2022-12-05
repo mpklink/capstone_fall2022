@@ -7,6 +7,9 @@ TagManager:
   - OverworldDoor
   - Book
   - LobbyToLibrary
+  - DoorOpener
+  - Elevator
+  - BookShelf1
   layers:
   - Default
   - TransparentFX

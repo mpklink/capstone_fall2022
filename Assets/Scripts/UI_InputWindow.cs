@@ -40,9 +40,14 @@ public class UI_InputWindow : MonoBehaviour
     {
         Debug.Log(field.text);
         int num = int.Parse(field.text);
-        globalVar.current[2] = num;
-        Debug.Log(globalVar.current[2]);
-        SceneManager.LoadScene("LibraryFloor");
+        if (num > 0 && num < 70)
+        {
+            globalVar.current[2] = num;
+            Debug.Log(globalVar.current[2]);
+            SceneManager.LoadScene("LibraryFloor");
+            Hide();
+        }
+        
     }
 
     private char ValidateChar(string validCharacters, char addedChar)
@@ -56,4 +61,6 @@ public class UI_InputWindow : MonoBehaviour
             return '\0';
         }
     }
+
+
 }
