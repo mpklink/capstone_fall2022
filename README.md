@@ -6,6 +6,9 @@ Release Notes:
 ---------------------------
 Currently the game is split across multiple code branches while some of the scenes and prefabs are being constructed individually.
 
+10/20/22:
+Merged all active scenes into the development branch after everyone added trags and box colliders.  Added global variables that will persist across scene changes and added the player code to change scenes. 
+
 PlayerPrefab branch: 
 This branch is where the player prefab that will be shared across all scenes is being constructed.  The player will be a blocky charcter similar to what you see in games like minecraft.  Currently just the basic outlines and camera movements are implemented. 
 
