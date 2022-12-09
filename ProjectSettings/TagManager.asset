@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - OverworldDoor
+  - Book
+  - LobbyToLibrary
+  - DoorOpener
+  - Elevator
+  - BookShelf1
   layers:
   - Default
   - TransparentFX
