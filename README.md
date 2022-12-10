@@ -81,4 +81,45 @@ Changed player position at start of the scene
 Added elevator to scene to make it look more consistent from the lobby scene
 
 Bookshelf scene:
-Updated the skin for the bookshelf so it matches the look of the bookshelves from the library scene. The win/loose script is now working however the chances of winning are very rare by design.  
+Updated the skin for the bookshelf so it matches the look of the bookshelves from the library scene. The win/loose script is now working however the chances of winning are very rare by design.
+
+12/9/2022
+---------------------------
+OverWorld:
+• The procedural generation algorithm is now complete. I switched to the use of a 2D  
+
+matrix array to keep track of the 72 blocks that can be instantiated (9X8), being 70, 71  
+
+and 72 also blocks with number 1, 2 and 3. The array contains a True/False value  
+
+indicating if it is currently instantiated. Every 9 seconds, the position of the player is  
+
+checked and far away blocks are destroyed and new are created based on a threshold  
+
+distance number, the 2D Boolean array and a dictionary holding coordinates and  
+
+GameObject of the block.  
+
+• Some minor fixes: The streets have been closed together to fix any gap. The buildings  
+
+have been colored with proper tones, and the doors have been placed rightly with respect  
+
+to the position and size of the building, which have also been re-sized to transmit a sense  
+
+of massiveness. 
+
+Lobby:
+After talking to Professor Ricks, it was noted that the lobby seemed too small compared to the other floors. This was fixed by changing the lobby again and adding textures and other objects such as couches, chairs and desks created in Blender. 
+
+Library:
+-Changed some lighting issues in the scene 
+
+-Added artwork to the walls in order to make the scene more dynamic 
+
+-Changed the placement of the camera in the library scene to make the scene look much bigger
+
+Bookshelf:
+I created my own sound effects. 
+
+I replaced my old sound effects with these new sound effects. 
+I made changes to my part of the project report so that it is up to date and covers the feedback given by the professor. 
